@@ -23,5 +23,12 @@ const nextConfig: NextConfig = {
   // 采集站/豆瓣等上游地址在运行时由用户配置，构建期无法枚举，关闭图片优化改用 <img>
   images: { unoptimized: true },
 };
+const nextConfig = {
+  // ... 你现有的配置
+  experimental: {
+    runtime: 'edge',
+  },
+};
+
 
 export default nextConfig;
